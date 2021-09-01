@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group">
+                <label for="bid-date">Bid Date</label>
+                <input type="date" class="form-control" id="bid-date" />
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="job-walk">Job Walk Date</label>
+                <input type="date" class="form-control" id="job-walk" />
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="rfi-date">RFI Date</label>
+                <input type="date" class="form-control" id="rfi-date" />
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="project-name">Project Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="project-name"
+                  placeholder="Enter Project Name"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <button id="add" class="btn btn-primary form-control mt-3">
+              Add Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-table mt-3 border-1 p-2">
+      <table id="list" class="table table-striped">
+        <tr>
+          <th>Project Name</th>
+          <th>Date Created</th>
+          <th>Bid Date</th>
+          <th>Job Walk Date</th>
+          <th>RFI Date</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+    </div>
+    <script src="bidapp.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
